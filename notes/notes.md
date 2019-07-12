@@ -23,4 +23,4 @@ insert the JS at the bottom of the HTML page
 there's an editor for 3d
 https://threejs.org/editor/
 
-Lookat have camera to look at a certain spot
+Look at have camera to look at a certain spot
