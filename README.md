@@ -41,7 +41,6 @@ https://threejs.org/editor/
 Start with the basic HTML template and then you add...
 
 <script src="js/three.js"></script>
-
 like this:
 
 ```html
@@ -63,7 +62,6 @@ like this:
 </html>
 
 ```
-
 For 3d it goes the same as within a 3d program.
 
 For each project there's usually:
@@ -71,6 +69,43 @@ For each project there's usually:
 - Scene (or staging area)
 - Camera (so where )
 - Lights 
-- And then the 3D model
+- 3D model
+- Render
+
+On the javascript side use a new js file and llnk it on the JS file. 
+
+##### SCENE
+
+First you start with setting the Scene for your model
+
+```javascript
+var scene = new THREE.Scene();
+```
+
+Then set up the camera
+
+```javascript
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+```
+
+The first parameter is setting the field of view
+
+The second parameter is aspect ratio
+
+The third and forth attribite is near and far clipping plane. Which basically is if the objects reach a certain distance from the camera it will not be rendered.
+
+https://threejs.org/examples/webgl_interactive_draggablecubes.html
+
+```javascript
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+```
+
+
+
+
+
+
 
 

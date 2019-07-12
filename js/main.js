@@ -8,9 +8,7 @@
 			var geometry = new THREE.BoxGeometry( 1, 4, 1 );
 			var geometry1 = new THREE.BoxGeometry( 7, 4, 7 );
 			var material = new THREE.MeshBasicMaterial( { color: 'blue', wireframe:true } );
-			// var material = new THREE.MeshBasicMaterial( { color: 'blue' } );
 			var cube = new THREE.Mesh( geometry, material );
-            // var cube = new THREE.Mesh( spheregeometry, material );
             var cube1 = new THREE.Mesh(geometry, material);
 			scene.add( cube );
 			scene.add( cube1 );
