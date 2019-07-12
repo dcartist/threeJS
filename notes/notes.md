@@ -19,3 +19,8 @@ Download the JS file from the website
 https://threejs.org/build/three.js
 insert the JS at the bottom of the HTML page
 <script src="js/three.js"></script>
+
+there's an editor for 3d
+https://threejs.org/editor/
+
+Lookat have camera to look at a certain spot
